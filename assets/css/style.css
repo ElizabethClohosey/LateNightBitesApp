@@ -1,14 +1,37 @@
-/* body {
-    background-image: url("https://www.google.com/url?sa=i&source=imgres&cd=&cad=rja&uact=8&ved=2ahUKEwizlsnlnujkAhWXCjQIHe3CAKoQjRx6BAgBEAQ&url=https%3A%2F%2Fwallpapercave.com%2Fpretty-night-sky-backgrounds&psig=AOvVaw2bXXA0pG8_o1_puvdPfnhN&ust=1569372636091571");
-} */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+
+/* what do want from this background image?  Maybe change it to a solid background for 600 and smaller and also larger than 1200?  */
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/13/08/04/cityscape-3315814_960_720.jpg");
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+}
+
+h1 {
+    color: white;
+}
 
 #food-type-search, #location-search {
-    border: 1px solid black;
-    background-color: gray;
-    /* width: 30%; */
+    border: 1px solid white;
+    width: 20%;
+    background-color: white;
 }
 
 .label-style {
-    color: black;
-    font-size: 1.5em;
+    margin-right: 1%;
+    color:white;
+    font-size: 2em;
 }
+
+
+
+
