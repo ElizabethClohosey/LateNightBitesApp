@@ -17,19 +17,38 @@ body {
 }
 
 h1 {
+    text-align: center;
     color: white;
 }
 
 #food-type-search, #location-search {
-    border: 1px solid white;
+    height: 25px;
     width: 20%;
     background-color: white;
+    margin-right: .5%;
 }
 
 .label-style {
-    margin-right: 1%;
+    margin-right: .5%;
     color:white;
     font-size: 2em;
+}
+
+button {
+    height: 25px;
+}
+
+
+/* testing this out - too much?  Maybe we can stop it after the get started modal is activated */
+.blinking{
+    animation:blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(253, 255, 136);    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    /* 100%{   color: #000;    } */
 }
 
 
