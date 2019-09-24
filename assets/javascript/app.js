@@ -1,30 +1,40 @@
+// $.ajax({
+//     url: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBch57574bZrBIaozRgthW7XGglbY305y4&callback=initMap",
+//     type: "GET",
+    // data: {
+    //   origins: $("#origin").val(),
+    //   destination: $("#destinations").val(),
+    //   mode: "driving",
+    // },
+//     success: function(data) {
+//       console.log(data);
+//     }
+//   });
 
-$(document).ready(function() {
+//   queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+//         emotion + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=8";
 
-    // search button on click function
-        $("#searchButton").on("click", function() {
-            var queryURL = api.yelp.com/v3/businesses/search;
-            var apiKey = jCMmOYHc25KdfrfqfSx4_sejgdnb8eeYAprm_L8JTHaCtYPYVV9JFiG8xDZyCuwWq24y4vOZYOP8oCLUXgkO8XCGb2oh4-z54urrZYbKFxp5CPUeNxe42vi7DR2JXXYx;
-    // How do you set up the query string? Is this it?
-            var queryString = 
-            {
-                search(argument_1: "value_1",
-                        argument_2: "value_2") 
-                        {
-                    field_1
-                    field_2 {
-                        nested_field_1
-                        
-                    }
-                }
-            };
-    // AJAX GET
-            $.ajax({
-                url: queryURL,
-                method: "GET"
-              })
-    // open page instructions show until either search button clicked
-    // restaurant, if open past 10, allow to populate, if not skip over
-    // retun area shows: restaurant, cuisine type, star rating, proximity, map
+$(document).ready(function () {
+    //This is a workaround since the Yelp API does not accept CORS
+    $.ajaxPrefilter(function(options) {
+        if (options.crossDomain && jQuery.support.cors) {
+            options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
         }
-    )});
+    });
+    //AJAX Yelp API request
+    $.ajax({
+        async: true,
+        crossDomain: true,
+        url: "https://api.yelp.com/v3/businesses/search? term=restaurants&latitude=35.7770171&longitude=-78.6381584&radius=1609&categories=restaurants&open_now=true&%20term=restaurants",
+        method: "GET",
+        headers: {
+            "Authorization": "Bearer jCMmOYHc25KdfrfqfSx4_sejgdnb8eeYAprm_L8JTHaCtYPYVV9JFiG8xDZyCuwWq24y4vOZYOP8oCLUXgkO8XCGb2oh4-z54urrZYbKFxp5CPUeNxe42vi7DR2JXXYx",
+        }
+    })
+    //Assyncronous promise to return the results of the request into the object of a function we will work out of
+    .then(function (response) {
+        //console log to see the object returned
+        console.log(response);
+    });
+
+});
