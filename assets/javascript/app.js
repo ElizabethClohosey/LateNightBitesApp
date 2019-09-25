@@ -52,8 +52,9 @@ $(document).ready(function () {
                 options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
             }
         });
+        
         // AJAX Yelp API request
-        console.log(latitude);
+
         $.ajax({
             async: true,
             crossDomain: true,
@@ -62,6 +63,7 @@ $(document).ready(function () {
             headers: {
                 "Authorization": "Bearer jCMmOYHc25KdfrfqfSx4_sejgdnb8eeYAprm_L8JTHaCtYPYVV9JFiG8xDZyCuwWq24y4vOZYOP8oCLUXgkO8XCGb2oh4-z54urrZYbKFxp5CPUeNxe42vi7DR2JXXYx",
             }
+        //promise that returns yelp object
         }).then(function (response) {
             // console log to see the object returned
             console.log(response);
