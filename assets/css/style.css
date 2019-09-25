@@ -26,6 +26,7 @@ h1 {
     width: 20%;
     background-color: white;
     margin-right: .5%;
+    border: 2px solid yellow;
 }
 
 .label-style {
@@ -36,6 +37,7 @@ h1 {
 
 button {
     height: 25px;
+    border: 2px solid yellow;
 }
 
 
