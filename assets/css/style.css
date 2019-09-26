@@ -6,9 +6,8 @@ html {
     height: 100%;
 }
 
-
-/* what do want from this background image?  Maybe change it to a solid background for 600 and smaller and also larger than 1200?  */
 body {
+    color: white;
     background-image: url("https://cdn.pixabay.com/photo/2018/04/13/08/04/cityscape-3315814_960_720.jpg");
     background-color: gray;
     background-repeat: no-repeat;
@@ -21,37 +20,37 @@ h1 {
     color: white;
 }
 
-#food-type-search, #location-search {
-    height: 25px;
-    width: 20%;
-    background-color: white;
-    margin-right: .5%;
-    border: 2px solid yellow;
-}
-
-.label-style {
-    margin-right: .5%;
-    color:white;
+#category-storage {
+    color: white;
     font-size: 2em;
+    text-align: center;
 }
 
-button {
-    height: 25px;
-    border: 2px solid yellow;
+#btnMap {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#btnYelpRequest {
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 
-/* testing this out - too much?  Maybe we can stop it after the get started modal is activated */
 .blinking{
     animation:blinkingText 1.5s infinite;
 }
 @keyframes blinkingText{
-    0%{     color: rgb(253, 255, 136);    }
+    0%{     color: #08F7FE;    }
     49%{    color: transparent; }
     50%{    color: transparent; }
     99%{    color:transparent;  }
     /* 100%{   color: #000;    } */
 }
+
+
 
 
 
