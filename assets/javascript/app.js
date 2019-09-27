@@ -1,10 +1,10 @@
 //Inititializing JS on document ready
-$(document).ready(function() {
-  //setting global variables for latitude and longitude to pass through yelp Ajax Request
-  var latitude;
-  var longitude;
-  var businessesArr = [];
-  var categoryArr = [];
+$(document).ready(function () {
+    //setting global variables for latitude and longitude to pass through yelp Ajax Request
+    var latitude;
+    var longitude;
+    var businessesArr = [];
+    var categoryArr = [];
 
   //On Click event to get map and current latitude and longitude
   $("#btnMap").on("click", initMap);
@@ -110,6 +110,49 @@ $(document).ready(function() {
       //     console.log("image url" + businessesArr[index].image_url);
       //   }
       //   console.log("categoryArr" + categoryArr);
+        $.ajax({
+            async: true,
+            crossDomain: true,
+            url: "https://api.yelp.com/v3/businesses/search? term=restaurants&latitude=" + latitude + "&longitude=" + longitude + "&radius=1000&categories=restaurants&open_now=true&%20term=restaurants",
+            method: "GET",
+            headers: {
+                "Authorization": "Bearer jCMmOYHc25KdfrfqfSx4_sejgdnb8eeYAprm_L8JTHaCtYPYVV9JFiG8xDZyCuwWq24y4vOZYOP8oCLUXgkO8XCGb2oh4-z54urrZYbKFxp5CPUeNxe42vi7DR2JXXYx",
+            }
+        //promise that returns yelp object
+        }).then(function (response) {
+            // console log to see the object returned
+            console.log(response);
+            console.log(response.businesses);
+            for (let index = 0; index < response.businesses.length; index++) {
+                businessesArr.push(response.businesses[index]);
+                console.log(businessesArr);
+            }
+            for (let index = 0; index < businessesArr.length; index++) {
+                console.log(index);
+                console.log(businessesArr[index]); 
+                //name of restaurant
+                console.log("name of restaurant " +businessesArr[index].name);
+                //category of food 
+                console.log("category " + businessesArr[index].categories[0].title); 
+                categoryArr.push(businessesArr[index].categories[0].title); 
+                //street address
+                console.log("street address " + businessesArr[index].location.address1);
+                //phone number
+                console.log("phone number " +businessesArr[index].phone);
+                //star rating
+                console.log("rating " + businessesArr[index].rating);
+                // of reviews
+                console.log("reviews " + businessesArr[index].review_count);
+                //price
+                console.log("price " + businessesArr[index].price);
+                //image url
+                console.log("image url" + businessesArr[index].image_url);
+
+            }
+            console.log("categoryArr" + categoryArr);
+            
+        });
+    });
 
       // run through response and only take restaurants open last 10PM
       // append restaurant name, location, stars, and image to new container div

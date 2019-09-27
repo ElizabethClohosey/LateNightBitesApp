@@ -6,10 +6,8 @@ html {
     height: 100%;
 }
 
-
-/* what do want from this background image?  Maybe change it to a solid background for 600 and smaller and also larger than 1200?  */
 body {
-    background-image: url("https://cdn.pixabay.com/photo/2018/04/13/08/04/cityscape-3315814_960_720.jpg");
+    /* background-image: url("https://cdn.pixabay.com/photo/2018/04/13/08/04/cityscape-3315814_960_720.jpg"); */
     background-color: gray;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -17,41 +15,71 @@ body {
 }
 
 h1 {
+    font-family: 'Monoton', cursive;
     text-align: center;
-    color: white;
+    /* color: white; */
+    color: #08F7FE
 }
 
-#food-type-search, #location-search {
-    height: 25px;
-    width: 20%;
-    background-color: white;
-    margin-right: .5%;
-    border: 2px solid yellow;
-}
-
-.label-style {
-    margin-right: .5%;
-    color:white;
-    font-size: 2em;
-}
-
-button {
-    height: 25px;
-    border: 2px solid yellow;
-}
-
-
-/* testing this out - too much?  Maybe we can stop it after the get started modal is activated */
-.blinking{
+/* .blinking{
     animation:blinkingText 1.5s infinite;
-}
+} */
 @keyframes blinkingText{
-    0%{     color: rgb(253, 255, 136);    }
+    0%{     color: #08F7FE;    }
     49%{    color: transparent; }
     50%{    color: transparent; }
     99%{    color:transparent;  }
     /* 100%{   color: #000;    } */
 }
+
+#category-storage {
+    margin-bottom: 3%;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+#btnMap {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#btnYelpRequest {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#stage2-results {
+    border: 5px solid black;
+}
+
+#disclaimer-results {
+    border: 1px solid black;
+}
+
+#empty-col-1 {
+    border: 1px solid red;
+}
+
+#yelp-info-storage {
+    border: 1px solid green;
+    overflow-y: auto;
+}
+
+#map-storage {
+    border: 1px solid yellow;
+}
+
+#map {
+    margin-top: 2.5%;
+}
+
+#empty-col-2 {
+    border: 1px solid purple;
+}
+
 
 
 
