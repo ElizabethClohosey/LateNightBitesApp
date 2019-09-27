@@ -60,7 +60,7 @@ $(document).ready(function () {
         $.ajax({
             async: true,
             crossDomain: true,
-            url: "https://api.yelp.com/v3/businesses/search? term=restaurants&latitude=" + latitude + "&longitude=" + longitude + "&radius=1000&categories=restaurants&open_now=true&%20term=restaurants",
+            url: "https://api.yelp.com/v3/businesses/search? term=restaurants&latitude=" + latitude + "&longitude=" + longitude + "&radius=20000&categories=restaurants&open_now=true&%20term=restaurants",
             method: "GET",
             headers: {
                 "Authorization": "Bearer jCMmOYHc25KdfrfqfSx4_sejgdnb8eeYAprm_L8JTHaCtYPYVV9JFiG8xDZyCuwWq24y4vOZYOP8oCLUXgkO8XCGb2oh4-z54urrZYbKFxp5CPUeNxe42vi7DR2JXXYx",
