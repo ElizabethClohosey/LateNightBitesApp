@@ -76,24 +76,53 @@ $(document).ready(function () {
             }
             for (let index = 0; index < businessesArr.length; index++) {
                 console.log(index);
-                console.log(businessesArr[index]); 
+                console.log("<image url" + businessesArr[index].image_url +">");
+                //creating unordered list to dynamically add to HTML
+                var unorderedList = $("<ul class = 'collection'>");
+                //creating list item for each restaurant's data to dynamically add to HTML
+                var listItem = $("<li class = 'collection-item-avatar'>");
+                //creating restaurant image to dynamically add to HTML
+                var restaurantImg = $('<img src ="' + businessesArr[index].image_url + '" class = "circle">');
+                console.log(restaurantImg); 
+                //creating several <p>'s for restaurant info to dynamically add to HTML
                 //name of restaurant
-                console.log("name of restaurant " +businessesArr[index].name);
+                var restaurantName = $("<p class = 'name'>").text(businessesArr[index].name);
+                console.log("name of restaurant " +restaurantName);
                 //category of food 
-                console.log("category " + businessesArr[index].categories[0].title); 
+                console.log("category " + restaurantCategory); 
+                var restaurantCategory = $("<p class = 'name'>").text(businessesArr[index].categories[0].title);
                 categoryArr.push(businessesArr[index].categories[0].title); 
+                console.log("category " + restaurantCategory); 
                 //street address
                 console.log("street address " + businessesArr[index].location.address1);
+                var restaurantAddress = $("<p class = 'address'>").text(businessesArr[index].location.address1);
                 //phone number
                 console.log("phone number " +businessesArr[index].phone);
+                var restaurantPhoneNumber = $("<p class = 'number'>").text(businessesArr[index].phone);
                 //star rating
                 console.log("rating " + businessesArr[index].rating);
-                // of reviews
+                var restaurantRating = $("<p class = 'rating'>").text("Rating out of 5: " + businessesArr[index].rating);
+                // # of reviews
                 console.log("reviews " + businessesArr[index].review_count);
+                var restaurantReviews = $("<p class = 'reviews'>").text("# of Reviews: " + businessesArr[index].review_count);
                 //price
                 console.log("price " + businessesArr[index].price);
+                var restaurantPrice = $("<p class = 'price'>").text("Price: " + businessesArr[index].price);
                 //image url
-                console.log("image url" + businessesArr[index].image_url);
+
+                //appending what we just created to add to div in HTML next
+                unorderedList.append(listItem);
+                listItem.append(restaurantImg);
+                listItem.append(restaurantName);
+                listItem.append(restaurantCategory);
+                listItem.append(restaurantAddress);
+                listItem.append(restaurantPhoneNumber);
+                listItem.append(restaurantRating);
+                listItem.append(restaurantReviews);
+                listItem.append(restaurantPrice);
+
+                //prepending to div in HTML
+                $("#yelp-info-storage").prepend(unorderedList);
 
             }
             console.log("categoryArr" + categoryArr);
