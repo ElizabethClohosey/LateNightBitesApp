@@ -53,6 +53,8 @@ $(document).ready(function () {
     //setting global variables for latitude and longitude to pass through yelp Ajax Request
     var latitude;
     var longitude;
+    var businessesArr = [];
+    var categoryArr = [];
 
     //On Click event to get map and current latitude and longitude
     $('#btnMap').on('click', initMap);
@@ -117,6 +119,35 @@ $(document).ready(function () {
         }).then(function (response) {
             // console log to see the object returned
             console.log(response);
+            console.log(response.businesses);
+            for (let index = 0; index < response.businesses.length; index++) {
+                businessesArr.push(response.businesses[index]);
+                console.log(businessesArr);
+            }
+            for (let index = 0; index < businessesArr.length; index++) {
+                console.log(index);
+                console.log(businessesArr[index]); 
+                //name of restaurant
+                console.log("name of restaurant " +businessesArr[index].name);
+                //category of food 
+                console.log("category " + businessesArr[index].categories[0].title); 
+                categoryArr.push(businessesArr[index].categories[0].title); 
+                //street address
+                console.log("street address " + businessesArr[index].location.address1);
+                //phone number
+                console.log("phone number " +businessesArr[index].phone);
+                //star rating
+                console.log("rating " + businessesArr[index].rating);
+                // of reviews
+                console.log("reviews " + businessesArr[index].review_count);
+                //price
+                console.log("price " + businessesArr[index].price);
+                //image url
+                console.log("image url" + businessesArr[index].image_url);
+
+            }
+            console.log("categoryArr" + categoryArr);
+            
         });
     });
 >>>>>>> a03e2e321890ba4df884de653484fbc50c873ba0
