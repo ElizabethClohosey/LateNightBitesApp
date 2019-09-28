@@ -101,6 +101,8 @@ h1 {
 
 #logo-category-storage {
     width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 #category-storage {
@@ -126,8 +128,12 @@ h1 {
 }
 
 #stage2-results {
-    /* height: 500px; */
+    border: 2px solid white;
+    height: 40em;
     width: 100%;
+    position: absolute;
+    bottom: 3%;
+    left: 16.5%;
 }
 
 #disclaimer-results {
@@ -140,6 +146,7 @@ h1 {
     overflow-y: scroll;
     width: 40%;
     margin-left: 5%;
+    margin-top: 3%;
 }
 
 .collection {
@@ -173,11 +180,11 @@ h1 {
 }
 
 #map {
-    /* border: 5px solid #08F7FE; */
-    height: 225px;
-    width: 300px;
-    margin-top: 22%;
-    margin-left: 12%;
+    border: 5px solid #08F7FE;
+    height: 350px;
+    width: 350px;
+    margin-top: 15%;
+    margin-left: 15%;
     opacity: 0.5%;
 }
 
