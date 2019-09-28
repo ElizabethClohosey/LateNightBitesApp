@@ -7,17 +7,15 @@ html {
 }
 
 body {
-    /* background-image: url("https://cdn.pixabay.com/photo/2018/04/13/08/04/cityscape-3315814_960_720.jpg"); */
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/13/08/04/cityscape-3315814_960_720.jpg");
     background-color: gray;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    /* background-size: cover; */
 }
 
 h1 {
     font-family: 'Monoton', cursive;
     text-align: center;
-    /* color: white; */
     color: #08F7FE
 }
 
@@ -52,32 +50,63 @@ h1 {
 }
 
 #stage2-results {
-    border: 5px solid black;
+    /* height: 500px; */
+    width: 100%;
 }
 
 #disclaimer-results {
     border: 1px solid black;
 }
 
-#empty-col-1 {
-    border: 1px solid red;
-}
-
 #yelp-info-storage {
-    border: 1px solid green;
-    overflow-y: auto;
+    /* border: 1px solid green; */
+    height: 500px;
+    overflow-y: scroll;
+    width: 40%;
+    margin-left: 5%;
 }
 
-#map-storage {
-    border: 1px solid yellow;
+.collection {
+    background:rgba(0, 0, 0, 0.4);
+    color: #08F7FE;
+    height: 160px;
+    /* border: none; */
+    padding-top: 5%;
+}
+
+.collection img {
+    position: absolute;
+    top: 5%;
+    width: 150px;
+    float: left;
+}
+
+.name,
+.category, 
+.address,
+.number,
+.rating,
+.reviews,
+.price {
+    margin-left: 50%;
+}
+
+.name {
+    font-weight: 800;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 #map {
-    margin-top: 2.5%;
+    /* border: 5px solid #08F7FE; */
+    height: 225px;
+    width: 300px;
+    margin-top: 22%;
+    margin-left: 12%;
+    opacity: 0.5%;
 }
 
-#empty-col-2 {
-    border: 1px solid purple;
+::-webkit-scrollbar {
+    display: none;
 }
 
 
