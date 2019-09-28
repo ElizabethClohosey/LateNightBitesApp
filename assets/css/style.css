@@ -65,7 +65,7 @@ h1 {
 } */
 
 #yelp-info-storage {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 500px;
     /* overflow-y: auto; */
     overflow-y: scroll;
@@ -73,6 +73,31 @@ h1 {
 
 .collection {
     height: 150px;
+    /* padding-top: 2%; */
+    /* padding-bottom: 2%; */
+}
+
+.collection img {
+    /* height: 150px; */
+    height: 100%;
+    width: 150px;
+    float: left;
+    /* margin-bottom: 3%; */
+    /* margin-top: 5%; */
+    /* margin-left: 2%; */
+    /* position: absolute; */
+    /* right: 15px; */
+    /* bottom: 2px; */
+}
+
+.name,
+.category, 
+.address,
+.number,
+.rating,
+.reviews,
+.price {
+    /* margin-left: 10%; */
 }
 
 #map {

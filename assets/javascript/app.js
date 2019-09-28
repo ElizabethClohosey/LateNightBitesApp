@@ -87,7 +87,7 @@ $(document).ready(function () {
                 //creating list item for each restaurant's data to dynamically add to HTML
                 var listItem = $("<li class = 'collection-item-avatar'>");
                 //creating restaurant image to dynamically add to HTML
-                var restaurantImg = $('<img src ="' + businessesArr[index].image_url + '" class = "circle">');
+                var restaurantImg = $('<img src ="' + businessesArr[index].image_url + '">');
                 console.log(restaurantImg);
                 //creating several <p>'s for restaurant info to dynamically add to HTML
                 //name of restaurant
