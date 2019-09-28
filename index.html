@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Late Nite Bites</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div class="container">
-        <div class="row">
-            <div class="col l12">
-                <h1 class="blinking">Late Nite Bites</h1>
-            </div>
+      <div class="row">
+        <div class="col l12">
+          <h1 class="blinking">Late Nite Bites</h1>
         </div>
-        <div class="row">
-            <div class="col l12">
-                <div id="category-storage">Category Button Storage</div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col l12">
+          <div id="category-storage">Category Button Storage</div>
         </div>
+      </div>
     </div>
 
-    <div class="container">
-        <!-- for stage one disclaimer/start button and stage2 results information -->
+    <div class="container" id="btnMap2-div">
+      <!-- for stage one disclaimer/start button and stage2 results information -->
 
-        <div class="row" id="disclaimer">
-            <div class="col l3"></div>
-            <div class="col l6 center-align" >
+      <div class="row">
+        <div class="col l3"></div>
+        <div class="col l6 center-align">
+          <!-- <img src="assets/images/finger3.jpg" alt="Directional finger image"> -->
 
-                <!-- <img src="assets/images/finger3.jpg" alt="Directional finger image"> -->
+          <p id="category-storage" class="center-align">
+            Welcome to Late Nite Bites! You MUST click on "allow" browswer to
+            use your location. We care about your privacy and will not use your
+            location for evil.
+          </p>
 
-<p class="center-align"> Welcome to Late Nite Bites! You MUST click on "allow" browswer to use your location. We care about your privacy and will not use your location for evil.</p>
+          <!-- <button class="disclaimer_button center-align p-5" id="disclaimer">
+            Click here to get started
+          </button> -->
 
-
-<button  class="disclaimer_button center-align p-5">Click here to get started</button>
-
-            </div>
-            <div class="col l3"></div>
+          <button id="btnMap">Click for Current Location</button>
         </div>
+        <div class="col l3"></div>
+      </div>
+    </div>
+
+    <div class="container" id="stage2-results">
+      <div class="row">
+        <div class="l12">
+          <p class="center-align" id="category-storage">Not hiding!!!!!</p>
+        </div>
+      </div>
     </div>
 
     <!-- JO: adding click buttons and map Div to populate map w/ current location: I used inline style for the meantime to give map size.  2nd button graps yelp object-->
-    <button id="btnMap">Click for Current Location</button>
+    <!-- <button id="btnMap">Click for Current Location</button> -->
     <button id="btnYelpRequest">Click for Yelp Results</button>
     <div id="map" style="height: 500px"></div>
 
-
-    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBch57574bZrBIaozRgthW7XGglbY305y4"
-        type="text/javascript"></script>
+    <script
+      src="https://code.jquery.com/jquery-latest.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBch57574bZrBIaozRgthW7XGglbY305y4"
+      type="text/javascript"
+    ></script>
     <script src="assets/javascript/app.js"></script>
-</body>
-
-
+  </body>
 </html>

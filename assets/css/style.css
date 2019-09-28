@@ -115,11 +115,11 @@ h1 {
     height: 5em;
 }
 
-#btnMap {
+/* #btnMap {
     position: absolute;
     top: 5px;
     right: 5px;
-}
+} */
 
 #btnYelpRequest {
     position: absolute;
