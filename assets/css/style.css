@@ -73,7 +73,7 @@ h1 {
 
 .collection {
     height: 150px;
-    border: none;
+    /* border: none; */
     /* padding-top: 2%; */
     /* padding-bottom: 2%; */
 }
@@ -99,8 +99,15 @@ h1 {
 .reviews,
 .price {
     margin-left: 50%;
-    /* padding-top: 1%; */
+    padding-top: .5%;
+    
     /* padding-right: 1%; */
+}
+
+.name {
+    /* margin-top: 3%; */
+    /* font-weight: 800; */
+    font-family: 'Fjalla One', sans-serif;
 }
 
 #map {
