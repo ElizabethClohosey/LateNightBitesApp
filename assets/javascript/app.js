@@ -6,6 +6,21 @@ $(document).ready(function () {
     var businessesArr = [];
     var categoryArr = [];
 
+    //Onclick to hide disclaimer
+
+    function hide(){
+        $('#disclaimer').hide();
+       
+      }
+
+      $('.disclaimer_button').on('click', function(){
+
+        hide();
+      
+      }); 
+
+
+
     //On Click event to get map and current latitude and longitude
     $('#btnMap').on('click', initMap);
     function initMap() {
