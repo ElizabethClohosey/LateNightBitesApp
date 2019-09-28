@@ -5,6 +5,8 @@ $(document).ready(function () {
     var longitude;
     var businessesArr = [];
     var categoryArr = [];
+    var unFilter = true;
+    var dummyFilter;
 
     //Onclick to hide disclaimer
 
@@ -63,6 +65,8 @@ $(document).ready(function () {
 
     //On click event to pass the gps coordinates through the yelp AJAX request and get the yelp object
     $('#btnYelpRequest').on('click', function () {
+        $("#yelp-info-storage").empty();
+        
         // This is a workaround since the Yelp API does not accept CORS
         $.ajaxPrefilter(function (options) {
             if (options.crossDomain && jQuery.support.cors) {
@@ -82,21 +86,20 @@ $(document).ready(function () {
             }
             //promise that returns yelp object
         }).then(function (response) {
+            $("#category-storage").empty();
+            businessesArr = [];
+            // categoryArr = [];
             // console log to see the object returned
             console.log(response);
             console.log(response.businesses);
-            var localCategoryArr = [];
             for (let index = 0; index < response.businesses.length; index++) {
                 businessesArr.push(response.businesses[index]);
                 console.log(businessesArr);
             }
             for (let index = 0; index < businessesArr.length; index++) {
-                var dummyFilter = "American (Traditional)";
-                var categoryFilter = false;
-                var isFilter = true;
                 var restaurantCategoryArr = [];
+                var categoryFilter = false;
                 console.log(index);
-                console.log("<image url" + businessesArr[index].image_url + ">");
                 //creating unordered list to dynamically add to HTML
                 var unorderedList = $("<ul class = 'collection'>");
                 //creating list item for each restaurant's data to dynamically add to HTML
@@ -115,12 +118,16 @@ $(document).ready(function () {
                     restaurantCategoryArr.push(businessesArr[index].categories[i].title);
                     if (categoryArr.indexOf(businessesArr[index].categories[i].title) == -1) {
                         categoryArr.push(businessesArr[index].categories[i].title);
+                        //creating buttons for the category
+                            
                     }
                     if (businessesArr[index].categories[i].title === dummyFilter) {
                         categoryFilter = true;
                     }
                 }
                 console.log("restaurantCategoryArr = " + restaurantCategoryArr);
+                
+
                 var restaurantCategory = $("<p class = 'name'>").text(restaurantCategoryArr);
                 //street address
                 console.log("street address " + businessesArr[index].location.address1);
@@ -138,7 +145,7 @@ $(document).ready(function () {
                 console.log("price " + businessesArr[index].price);
                 var restaurantPrice = $("<p class = 'price'>").text("Price: " + businessesArr[index].price);
                 //image url
-                if (categoryFilter || isFilter) {
+                if (categoryFilter || unFilter) {
                     //appending what we just created to add to div in HTML next
                     unorderedList.append(listItem);
                     listItem.append(restaurantImg);
@@ -156,9 +163,25 @@ $(document).ready(function () {
 
 
             }
+            categoryArr.sort();
+            for (let index = 0; index < categoryArr.length; index++) {
+                const element = categoryArr[index];
+                var a = $('<button class = "btn-category">');
+                //Providing the inital button text
+                a.text(element);
+                //Adding the button to the buttons-appear-here div
+                $("#category-storage").append(a);
+            }
+
             console.log("categoryArr " + categoryArr);
 
         });
     });
 
+    $(document.body).on("click", ".btn-category", function () {
+        
+        dummyFilter = $(this).text();
+        unFilter = false;
+        $("#btnYelpRequest").click();
+    });
 });
