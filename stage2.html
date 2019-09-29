@@ -8,6 +8,7 @@
     <title>Late Nite Bites</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -67,16 +68,21 @@
 
             <!-- yelp info column -->
             <div id="yelp-info-storage" class="col l6"></div>
-
+            <button id="btnYelpRequest">Find My Food</button>
+            
             <!-- map column  -->
             <div id="map" class="col l6"></div>
-            <button id="btnLocate2">Find Me</button>
+            <!-- <button id="btnLocate2">Find Me</button> -->
+            <a id="btnLocate2" class="btn-floating btn-large" style="background-color: #ff84da">
+                <i id="map-icon" class="material-icons">my_location
+                  </i>
+            </a>
 
         </div>
 
     </div>
    
-    <button id="btnYelpRequest">Find My Food</button>
+    
 
     <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBch57574bZrBIaozRgthW7XGglbY305y4" type="text/javascript"></script>
@@ -89,7 +95,7 @@
 
                         <!-- To Do -->
 <!-- 
-  show map button on stage 2
+  style map button
   add flare to buttons
   delete index.html
   change stage2.html to index.html
@@ -99,6 +105,8 @@
 
                         <!--Notes -->
 <!--
+  changed button to locate user in statge 2
+  relocated and restyled yelp reuslt button - moved it into results container
 -->
 
 
@@ -106,7 +114,6 @@
 restaurant pins are not dropping on map
 can't click on result 
 yelp button hide on page one
-add map button back to page 2 
 -->
 
               

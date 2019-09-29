@@ -158,10 +158,10 @@ span {
 
 #btnYelpRequest {
     font-size: 2em;
-    width: 10%; 
+    width: 15%; 
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 1%;
+    left: 20%;
     color: rgb(255, 132, 218);
     background-color: rgba(0, 0, 0, 0.4); 
     padding: .5%;
@@ -250,6 +250,16 @@ span {
     margin-top: 15%;
     margin-left: 15%;
     opacity: 0.5%;
+}
+
+#map-icon {
+  font-size: 40px;
+}
+
+#btnLocate2 {  
+  position: absolute;
+  right: 9%;
+  top: 20%;
 }
 
 ::-webkit-scrollbar {
