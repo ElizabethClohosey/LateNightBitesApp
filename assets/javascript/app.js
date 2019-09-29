@@ -1,5 +1,10 @@
 //Inititializing JS on document ready
 $(document).ready(function () {
+
+    //Hide stage 2 dive when page loads
+
+    $("#stage2-results").hide();
+
     //setting global variables for latitude and longitude to pass through yelp Ajax Request
     var latitude;
     var longitude;
@@ -8,23 +13,14 @@ $(document).ready(function () {
     var unFilter = true;
     var dummyFilter;
 
-    //Onclick to hide disclaimer
+    
 
-    function hide(){
-        $('#disclaimer').hide();
-       
-      }
-
-      $('.disclaimer_button').on('click', function(){
-
-        hide();
-      
-      }); 
+    
 
 
 
     //On Click event to get map and current latitude and longitude
-    $('#btnMap').on('click', initMap);
+    $('#btnLocate').on('click', initMap);
     function initMap() {
         var map, infoWindow;
         map = new google.maps.Map(document.getElementById('map'), {
@@ -53,6 +49,18 @@ $(document).ready(function () {
             // Browser doesn't support Geolocation
             handleLocationError(false, infoWindow, map.getCenter());
         }
+
+        function hide() {
+            $("#stage1-disclaimer").hide();
+          }
+      
+          hide();
+      
+          function show() {
+            $("#stage2-results").show();
+          }
+      
+          show();
     }
 
     function handleLocationError(browserHasGeolocation, infoWindow, pos) {
