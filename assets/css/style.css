@@ -27,6 +27,24 @@ h1 {
     animation: flicker 1.5s infinite alternate;
   }
 
+  #disclaimer-storage {
+    border: 2px solid #fff;
+    animation: flicker 2.5s infinite alternate;
+    --neon-border-color: #08f7fe;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+  }
+
+  #stage2-results {
+    border: 2px solid #fff;
+    animation: flicker 3.5s infinite alternate;
+    --neon-border-color: #08f7fe;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+  }
+
   :root {
     /* Base font size */
     font-size: 12px;
@@ -114,18 +132,20 @@ h1 {
   margin-top: 1%;
 }
 
+
+
 #btnLocate {
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 2%;
+  /* padding: 2%; */
   font-size: 1em;
   margin-top: 5%;
-  color:#08F7FE;
+  color: rgb(255, 132, 218);
   width: 75%;
   text-align: center;
 }
 
 #btnLocate:hover {
-  color: rgb(255, 132, 218); 
+  color: #08F7FE;
 }
 
 #category-storage {
