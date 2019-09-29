@@ -24,6 +24,7 @@ h1 {
     font-weight: 200;
     font-style: italic;
     color: #fff;
+    margin-bottom: .5%;
     animation: flicker 1.5s infinite alternate;
   }
 
@@ -38,7 +39,7 @@ h1 {
 
   #stage2-results {
     border: 2px solid #fff;
-    animation: flicker 3.5s infinite alternate;
+    /* animation: flicker 3.5s infinite alternate; */
     --neon-border-color: #08f7fe;
     border-radius: 1rem;
     background: rgba(0, 0, 0, 0.4);
@@ -124,7 +125,7 @@ h1 {
 
 #disclaimer-storage {
   font-size: 2.5em;
-  padding-top: 9%;
+  padding: 9% 3% 0% 3%;
   font-family: 'Fjalla One', sans-serif;
   height: 10em;
   color: #08F7FE;
@@ -152,14 +153,13 @@ h1 {
     color: white;
     font-size: 2em;
     text-align: center;
-    height: 5em;
 }
 
 #btnYelpRequest {
     font-size: 2em;
     width: 20%; 
     position: absolute;
-    top: 39%;
+    top: 40%;
     left: 25%;
     color: #08F7FE;
     background-color: rgba(0, 0, 0, 0.4);
@@ -199,7 +199,7 @@ h1 {
     overflow-y: scroll;
     width: 45%;
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
 .collection {

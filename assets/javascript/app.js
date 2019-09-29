@@ -1,9 +1,14 @@
+
 //Inititializing JS on document ready
 $(document).ready(function () {
+    // Hide stage 1 category storage
+    $("#category-storage").hide();
 
-    //Hide stage 2 dive when page loads
-
+    //Hide stage 2 div when page loads
     $("#stage2-results").hide();
+
+    // Hide Yelp search button when page loads
+    $("#btnYelpRequest").hide();
 
     //setting global variables for latitude and longitude to pass through yelp Ajax Request
     var latitude;
@@ -58,6 +63,9 @@ $(document).ready(function () {
       
           function show() {
             $("#stage2-results").show();
+            $("#category-storage").show();
+            $("#btnYelpRequest").show();
+            // $("#btnLocate").show();
           }
       
           show();
@@ -193,3 +201,12 @@ $(document).ready(function () {
         $("#btnYelpRequest").click();
     });
 });
+
+
+
+
+// //line 59 show function
+//           function show() {
+//             $("#stage2-results").show();
+//             $("#category-storage").show();
+//           }
