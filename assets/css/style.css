@@ -105,8 +105,36 @@ h1 {
     margin-bottom: 1%;
 }
 
+#disclaimer-storage {
+  /* border: 1px solid white; */
+  font-size: 4em;
+  padding-top: 9%;
+  font-family: 'Fjalla One', sans-serif;
+  height: 10em;
+  /* color: #08F7FE; */
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  margin-top: 1%;
+}
+
+#btnLocate {
+  height: 15%;
+  font-size: 1em;
+  margin-top: 5%;
+  background-color:#08F7FE; 
+  color: white;
+  width: 50%;
+  /* padding-top: 3%; */
+  background-color: rgba(211, 205, 205, 0.4);
+  text-align: center;
+}
+
+#btnLocate:hover {
+  color: #08F7FE;
+}
+
 #category-storage {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     /* margin-bottom: 3%; */
     color: white;
     font-size: 2em;
