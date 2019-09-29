@@ -24,7 +24,11 @@ Release History
 
 Meta
 
-Lizzy Clohosey – YourEmail@example.com
+Elizabeth Clohosey
+Email - Elizabethclohosey@gmail.com
+GitHub - https://github.com/ElizabethClohosey
+LinkedIn - https://www.linkedin.com/in/elizabeth-clohosey-r-t-r-m-arrt-10233a185/
+
 
 Justin Carlson – 
 
