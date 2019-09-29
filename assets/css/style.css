@@ -118,12 +118,12 @@ h1 {
 }
 
 #btnLocate {
-  height: 15%;
+  height: 20%;
   font-size: 1em;
   margin-top: 5%;
   background-color:#08F7FE; 
   color: white;
-  width: 50%;
+  width: 75%;
   /* padding-top: 3%; */
   background-color: rgba(211, 205, 205, 0.4);
   text-align: center;
@@ -150,13 +150,29 @@ h1 {
 }
 
 #btnYelpRequest {
+    /* border: none; */
+    font-size: 2em;
+    width: 20%; 
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 380px;
+    left: 450px;
+    color: #08F7FE;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: .5%;
+    /* height: 3em; */
+}
+
+.btn-category {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-left: 1%;
+  color: #08F7FE;
+  margin-bottom:  1%;
+  /* border: none; */
+  padding: .5%;
 }
 
 #stage2-results {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 40em;
     width: 100%;
     position: absolute;
@@ -208,7 +224,7 @@ h1 {
 }
 
 #map {
-    border: 5px solid #08F7FE;
+    /* border: 5px solid #08F7FE; */
     height: 350px;
     width: 350px;
     margin-top: 15%;
