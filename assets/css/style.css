@@ -20,11 +20,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 8em;
+    font-size: 10em;
     font-weight: 200;
     font-style: italic;
     color: #fff;
-    /* padding: 4rem 6rem 5.5rem; */
     animation: flicker 1.5s infinite alternate;
   }
 
@@ -66,9 +65,9 @@ h1 {
         0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color),
         0 0 10rem var(--neon-text-color);
   
-      /* box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff,
+      box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff,
         0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color),
-        0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color); */
+        0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
     }
   
     20%,
@@ -106,68 +105,49 @@ h1 {
 }
 
 #disclaimer-storage {
-  /* border: 1px solid white; */
-  font-size: 4em;
+  font-size: 2.5em;
   padding-top: 9%;
   font-family: 'Fjalla One', sans-serif;
   height: 10em;
   color: #08F7FE;
-  /* color: white; */
   background: rgba(0, 0, 0, 0.4);
   margin-top: 1%;
 }
 
 #btnLocate {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 20%;
+  padding: 2%;
   font-size: 1em;
   margin-top: 5%;
-  color: white;
-  /* background-color:#08F7FE;  */
-  /* color: white; */
+  color:#08F7FE;
   width: 75%;
-  /* padding-top: 3%; */
-  /* background-color: rgba(211, 205, 205, 0.4); */
   text-align: center;
 }
 
 #btnLocate:hover {
-  color: #08F7FE;
+  color: rgb(255, 132, 218); 
 }
 
 #category-storage {
-    /* border: 1px solid white; */
-    /* margin-bottom: 3%; */
     color: white;
     font-size: 2em;
     text-align: center;
-    /* width: 100%; */
     height: 5em;
 }
 
-/* #btnMap {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-} */
-
 #btnYelpRequest {
-    /* border: none; */
     font-size: 2em;
     width: 20%; 
     position: absolute;
     top: 39%;
     left: 25%;
-    /* top: 380px; */
-    /* left: 450px; */
     color: #08F7FE;
     background-color: rgba(0, 0, 0, 0.4);
     padding: .5%;
-    /* height: 3em; */
 }
 
 #btnYelpRequest:hover {
-  color: white;
+  color: rgb(255, 132, 218);
 }
 
 .btn-category {
@@ -175,16 +155,14 @@ h1 {
   margin-left: 1%;
   color: #08F7FE;
   margin-bottom:  1%;
-  /* border: none; */
   padding: .5%;
 }
 
 .btn-category:hover{
-  color: white;
+  color: rgb(255, 132, 218);
 }
 
 #stage2-results {
-    /* border: 2px solid white; */
     height: 40em;
     width: 100%;
     position: absolute;
@@ -197,7 +175,6 @@ h1 {
 } */
 
 #yelp-info-storage {
-    /* border: 1px solid green; */
     height: 500px;
     overflow-y: scroll;
     width: 45%;
@@ -218,6 +195,7 @@ h1 {
     top: 5%;
     width: 150px;
     float: left;
+    margin-left: 3%;
 }
 
 .name,
@@ -242,7 +220,6 @@ h1 {
 }
 
 #map {
-    /* border: 5px solid #08F7FE; */
     height: 350px;
     width: 350px;
     margin-top: 15%;
@@ -254,26 +231,6 @@ h1 {
     display: none;
 }
 
-
-
-                    /* unused code  */
-
-/* h1 {
-    font-family: 'Monoton', cursive;
-    text-align: center;
-    color: #08F7FE
-}
-
-.blinking{
-    animation:blinkingText 1.5s infinite;
-}
-@keyframes blinkingText{
-    0%{     color: #08F7FE;    }
-    49%{    color: transparent; }
-    50%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: #000;    }
-} */
 
 
 
