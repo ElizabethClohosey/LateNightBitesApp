@@ -21,11 +21,13 @@ $(document).ready(function () {
     
 
     
-
+    //adding second button w/ same locate function to be used in stage two
+    $('#btnLocate2').on('click',initMap);
 
 
     //On Click event to get map and current latitude and longitude
     $('#btnLocate').on('click', initMap);
+
     function initMap() {
         var map, infoWindow;
         map = new google.maps.Map(document.getElementById('map'), {
