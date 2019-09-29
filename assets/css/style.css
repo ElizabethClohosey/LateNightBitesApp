@@ -133,11 +133,12 @@ h1 {
   margin-top: 1%;
 }
 
-
+span {
+  font-weight: 800;
+}
 
 #btnLocate {
   background-color: rgba(0, 0, 0, 0.4);
-  /* padding: 2%; */
   font-size: 1em;
   margin-top: 5%;
   color: rgb(255, 132, 218);
@@ -157,17 +158,17 @@ h1 {
 
 #btnYelpRequest {
     font-size: 2em;
-    width: 20%; 
+    width: 10%; 
     position: absolute;
     top: 40%;
-    left: 25%;
-    color: #08F7FE;
-    background-color: rgba(0, 0, 0, 0.4);
+    left: 30%;
+    color: rgb(255, 132, 218);
+    background-color: rgba(0, 0, 0, 0.4); 
     padding: .5%;
 }
 
 #btnYelpRequest:hover {
-  color: rgb(255, 132, 218);
+  color: #08F7FE;
 }
 
 .btn-category {
@@ -180,6 +181,10 @@ h1 {
 
 .btn-category:hover{
   color: rgb(255, 132, 218);
+}
+
+.button:active {
+  transform: translateY(4px);
 }
 
 #stage2-results {
