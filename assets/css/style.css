@@ -175,7 +175,7 @@ span {
   background-color: rgba(0, 0, 0, 0.4);
   margin-left: 1%;
   color: #08F7FE;
-  margin-bottom:  1%;
+  margin-bottom: .5%;
   padding: .5%;
 }
 
@@ -188,11 +188,11 @@ span {
 }
 
 #stage2-results {
-    height: 40em;
+    height: 36em;
     width: 100%;
-    position: absolute;
-    bottom: 3%;
-    left: 16.5%;
+    /* position: absolute; */
+    /* bottom: 3%; */
+    /* left: 16.5%; */
 }
 
 /* #disclaimer-results {
@@ -200,11 +200,11 @@ span {
 } */
 
 #yelp-info-storage {
-    height: 500px;
+    height: 35em;
     overflow-y: scroll;
     width: 45%;
     margin-left: 5%;
-    margin-top: 4%;
+    /* margin-top: 4%; */
 }
 
 .collection {
@@ -247,7 +247,7 @@ span {
 #map {
     height: 350px;
     width: 350px;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 15%;
     opacity: 0.5%;
 }
