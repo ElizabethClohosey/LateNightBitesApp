@@ -8,6 +8,7 @@
     <title>Late Nite Bites</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -15,49 +16,111 @@
 
 <body>
 
-    <div class="container">
+    <div id="logo-category-storage" class="container">
         <div class="row">
             <div class="col l12">
-                <h1 class="blinking">Late Nite Bites</h1>
+               <h1 class="blinking">Late Nite Bites</h1> 
             </div>
         </div>
         <div class="row">
             <div class="col l12">
-                <div id="category-storage">Category Button Storage</div>
+                <div id="category-storage">
+
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <!-- for stage one disclaimer/start button and stage2 results information -->
+ <!-- div for stage one disclaimer/start button -->
+    <div class="container-disclaimer" id="stage1-disclaimer">
+     
+        <div id="disclaimer" class="row">
+        
+          <!-- empty column  -->
+        <div class="col l3"></div>
 
-        <div class="row" id="disclaimer">
-            <div class="col l3"></div>
-            <div class="col l6 center-align" >
+        <!-- disclaimer text and button  -->
+        <div class="col l6 center-align">
+          
+          <p id="disclaimer-storage" class="center-align">
+            Welcome to Late Nite Bites! You <span>MUST</span> click on "allow" browser to
+            use your location. We care about your privacy and will not use your
+            location for evil.<br>
 
-                <!-- <img src="assets/images/finger3.jpg" alt="Directional finger image"> -->
+            <button id="btnLocate">Click Here For Late Nite Bites!</button>
+            
 
-<p class="center-align"> Welcome to Late Nite Bites! You MUST click on "allow" browswer to use your location. We care about your privacy and will not use your location for evil.</p>
+          </p>
 
-
-<button  class="disclaimer_button center-align p-5">Click here to get started</button>
-
-            </div>
-            <div class="col l3"></div>
         </div>
+
+          <!-- empty column  -->
+        <div class="col l3"></div>
+
+      </div>
+
     </div>
 
-    <!-- JO: adding click buttons and map Div to populate map w/ current location: I used inline style for the meantime to give map size.  2nd button graps yelp object-->
-    <button id="btnMap">Click for Current Location</button>
-    <button id="btnYelpRequest">Click for Yelp Results</button>
-    <div id="map" style="height: 500px"></div>
+    <!-- grid for stage2 results information -->
+    <div class="container" id="stage2-results" >
 
+        <div class="row">
+
+            <!-- yelp info column -->
+            <div id="yelp-info-storage" class="col l6"></div>
+
+            <button id="btnYelpRequest">Find My Food</button>
+            
+            <!-- map column  -->
+            <div id="map" class="col l6"></div>
+
+            <a id="btnLocate2" class="btn-floating btn-large" style="background-color: #ff84da">
+                <i id="map-icon" class="material-icons">my_location
+                  </i>
+            </a>
+
+        </div>
+
+    </div>
+   
+    
 
     <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBch57574bZrBIaozRgthW7XGglbY305y4"
-        type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBch57574bZrBIaozRgthW7XGglbY305y4" type="text/javascript"></script>
     <script src="assets/javascript/app.js"></script>
+
 </body>
 
 
 </html>
+
+                        <!-- To Do -->
+<!-- 
+  add more flare to buttons ???
+
+  delete index.html
+
+  change stage2.html to index.html
+  
+  make glow border instead of flickering effect.... slowing down site
+  MUST is blurry - change back if it still looks bad after border is change
+
+  add languages, libraries and frameworks used to ReadMe
+
+  Limit results to 1 mile and maybe only return 15 or 20 to keep category storage style
+--> 
+
+                        <!--Notes -->
+<!--
+
+-->
+
+                      <!-- Issues  -->
+<!--
+restaurant pins are not dropping on map
+can't click on result 
+
+making a change for test purposes
+-->
+
+              
