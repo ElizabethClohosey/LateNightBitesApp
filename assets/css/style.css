@@ -39,12 +39,21 @@ h1 {
 
   #stage2-results {
     border: 2px solid #fff;
-    /* animation: flicker 3.5s infinite alternate; */
+    animation: flicker 1.5s infinite alternate;
+    -webkit-transform-style: preserve-3d;
+    /* box-shadow: 120px 80px 40px 20px #08f7fe; */
     --neon-border-color: #08f7fe;
     border-radius: 1rem;
     background: rgba(0, 0, 0, 0.4);
     color: white;
   }
+
+  /* #stage2-results {
+    border: 2px solid #fff;
+    --neon-border-color: #08f7fe;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+  } */
 
   :root {
     /* Base font size */
@@ -196,6 +205,8 @@ span {
     /* bottom: 3%; */
     /* left: 16.5%; */
 }
+
+
 
 /* #disclaimer-results {
     border: 1px solid black;
