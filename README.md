@@ -7,15 +7,16 @@ Neon signs, nearly blindingly bright, light our way out of the haze. The app kno
 
 This app; this miraculous monolith for satisfying desires must receive the highest praise, extoling it’s worth to those who hunger as we do. We must endorse thee… the highest rating… five stars.
       
-**_Usage Example_**
+### Usage Example
 Late-night hunger strikes for many after kitchens have closed. Where can one find food? Look no further than Late Nite Bites, an app dedicated to finding the food you crave in the mid-night hours.
 Late Nite Bites uses google maps and yelp APIs to bring about functionality specific to late-night nourishment. Using google maps to find your location, yelp is then able to find restaurants open. Our cuisine sorting allows one to filter specific fare for a personalized, quick, and easy user experience. 
+
 ![Late Nite Bites Screenshot](/LNB.png)
 
-**_Release History_**
+### Release History
 •    9/29/2019    Deployed and live
 
-**_Meta_**
+### Meta
 * Lizzy Clohosey 
     - Elizabethclohosey@gmail.com GitHub 
     - https://github.com/ElizabethClohosey LinkedIn 
@@ -23,9 +24,9 @@ Late Nite Bites uses google maps and yelp APIs to bring about functionality spec
 * Justin Carlson
 * Jamie O’Neill
 * Liz Harris 
-    - lizharris90210@gmail.com
+    - lizharris90210@gmail.com GitHub
 
-Project 1 for UNC Coding Bootcamp. 
+#### Project 1 for UNC Coding Bootcamp. 
 https://github.com/justincarlson7/lateNightBites
 
 
