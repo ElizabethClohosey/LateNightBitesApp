@@ -23,6 +23,9 @@ Late Nite Bites uses google maps and yelp APIs to bring about functionality spec
     - LinkedIn https://www.linkedin.com/in/elizabeth-clohosey-r-t-r-m-arrt-10233a185/
 * Justin Carlson
 * Jamie O’Neill
+    - joneill@sembracare.com
+    - GitHub https://github.com/pharmdcoder
+    - LinkedIn https://www.linkedin.com/in/jamie-o-neill-b45ab3a5/
 * Liz Harris 
     - lizharris90210@gmail.com 
     - GitHub https://github.com/lizharris90210
