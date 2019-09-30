@@ -159,9 +159,10 @@ span {
 #btnYelpRequest {
     font-size: 2em;
     width: 15%; 
+    /* margin-top: 5%; */
     position: absolute;
     top: 1%;
-    left: 20%;
+    left: 50%;
     color: rgb(255, 132, 218);
     background-color: rgba(0, 0, 0, 0.4); 
     padding: .5%;
@@ -188,6 +189,7 @@ span {
 }
 
 #stage2-results {
+    position: relative;
     height: 36em;
     width: 100%;
     /* position: absolute; */
@@ -249,7 +251,6 @@ span {
     width: 350px;
     margin-top: 10%;
     margin-left: 15%;
-    opacity: 0.5%;
 }
 
 #map-icon {
@@ -257,9 +258,11 @@ span {
 }
 
 #btnLocate2 {  
+  /* margin-left: 23%; */
+  /* margin-top: 5%; */
   position: absolute;
-  right: 9%;
-  top: 20%;
+  right: 8%;
+  top: 10%;
 }
 
 ::-webkit-scrollbar {
