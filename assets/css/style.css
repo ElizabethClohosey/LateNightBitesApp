@@ -24,14 +24,15 @@ h1 {
   font-weight: 200;
   font-style: italic;
   /* color: #fff; */
-  /* --neon-border-color: rgb(255, 132, 218); */
+  --neon-border-color: rgb(255, 132, 218);
   /* padding: 4rem 6rem 5.5rem; */
   animation: flicker 2.5s infinite alternate;
 }
 
 .container-disclaimer {
-  border: 2px solid #fff;
+  font-family: "Fjalla One", sans-serif;
   width: 60%;
+  border: 2px solid #fff;
   animation: flicker 2.5s infinite alternate;
   --neon-border-color: #08f7fe;
   border-radius: 1rem;
@@ -111,13 +112,13 @@ h1:focus {
   margin-bottom: 1%;
 }
 #disclaimer-storage {
-  font-family: "Shadows Into Light", cursive;
   font-size: 2.5em;
   padding: 9% 3% 0 3%;
-  /* font-family: "Fjalla One", sans-serif; */
+  font-family: "Fjalla One", sans-serif;
   height: 10em;
   color: #08f7fe;
   margin-top: 1%;
+  margin-bottom: 1%;
   align-content: center;
   vertical-align: center;
   width: 100%;
@@ -128,15 +129,15 @@ span {
 
 #btnLocate {
   background-color: rgba(0, 0, 0, 0.4);
-  font-family: "Shadows Into Light", cursive;
   font-size: 1em;
-  margin-top: 5%;
+  margin-top: 1%;
   color: rgb(255, 132, 218);
   width: 75%;
   text-align: center;
-  border-radius: 0.75rem;
+  border: 2px solid #fff;
   animation: flicker 2.5s infinite alternate;
   --neon-border-color: #08f7fe;
+  border-radius: 1rem;
 }
 
 #btnLocate:hover {
