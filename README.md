@@ -16,10 +16,15 @@ Late Nite Bites uses google maps and yelp APIs to bring about functionality spec
 •    9/29/2019    Deployed and live
 
 **_Meta_**
-Lizzy Clohosey – YourEmail@example.com
-Justin Carlson – 
-Jamie O’Neill – 
-Liz Harris – lizharris90210@gmail.com
+* Lizzy Clohosey 
+    - Elizabethclohosey@gmail.com GitHub 
+    - https://github.com/ElizabethClohosey LinkedIn 
+    - https://www.linkedin.com/in/elizabeth-clohosey-r-t-r-m-arrt-10233a185/
+* Justin Carlson
+* Jamie O’Neill
+* Liz Harris 
+    - lizharris90210@gmail.com
+
 Project 1 for UNC Coding Bootcamp. 
 https://github.com/justincarlson7/lateNightBites
 
