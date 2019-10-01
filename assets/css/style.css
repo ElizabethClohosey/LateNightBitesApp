@@ -11,6 +11,7 @@ body {
     background-color: gray;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-size: cover;
 }
 /* ----------------------------- Logo begin ------------------------ */
 h1 {
@@ -39,7 +40,7 @@ h1 {
 
   #stage2-results {
     border: 2px solid #fff;
-    /* animation: flicker 3.5s infinite alternate; */
+    box-shadow: 0 0 4rem #08f7fe, inset 0 0 4rem #08f7fe;
     --neon-border-color: #08f7fe;
     border-radius: 1rem;
     background: rgba(0, 0, 0, 0.4);
@@ -96,9 +97,7 @@ h1 {
       box-shadow: none;
     }
   }
-  /* .blinking{
-      animation:blinkingText 1.5s infinite;
-  } */
+
   @keyframes blinkingText {
     0% {
       color: #08f7fe;
@@ -160,8 +159,8 @@ span {
     font-size: 2em;
     width: 15%; 
     position: absolute;
-    top: 1%;
-    left: 20%;
+    top: 2%;
+    left: 57.5%;
     color: rgb(255, 132, 218);
     background-color: rgba(0, 0, 0, 0.4); 
     padding: .5%;
@@ -175,7 +174,7 @@ span {
   background-color: rgba(0, 0, 0, 0.4);
   margin-left: 1%;
   color: #08F7FE;
-  margin-bottom:  1%;
+  margin-bottom: .5%;
   padding: .5%;
 }
 
@@ -188,30 +187,22 @@ span {
 }
 
 #stage2-results {
-    height: 40em;
+    position: relative;
+    height: 36em;
     width: 100%;
-    position: absolute;
-    bottom: 3%;
-    left: 16.5%;
 }
 
-/* #disclaimer-results {
-    border: 1px solid black;
-} */
-
 #yelp-info-storage {
-    height: 500px;
+    height: 35em;
     overflow-y: scroll;
     width: 45%;
     margin-left: 5%;
-    margin-top: 4%;
 }
 
 .collection {
     background:rgba(0, 0, 0, 0.4);
     color: #08F7FE;
     height: 175px;
-    /* border: none; */
     padding-top: 5%;
 }
 
@@ -247,19 +238,18 @@ span {
 #map {
     height: 350px;
     width: 350px;
-    margin-top: 15%;
+    margin-top: 7%;
     margin-left: 15%;
-    opacity: 0.5%;
 }
 
 #map-icon {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #btnLocate2 {  
   position: absolute;
-  right: 9%;
-  top: 20%;
+  right: 15%;
+  top: 2%;
 }
 
 ::-webkit-scrollbar {
