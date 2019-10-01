@@ -40,7 +40,7 @@ h1 {
 
   #stage2-results {
     border: 2px solid #fff;
-    /* animation: flicker 3.5s infinite alternate; */
+    box-shadow: 0 0 4rem #08f7fe, inset 0 0 4rem #08f7fe;
     --neon-border-color: #08f7fe;
     border-radius: 1rem;
     background: rgba(0, 0, 0, 0.4);
@@ -97,9 +97,7 @@ h1 {
       box-shadow: none;
     }
   }
-  /* .blinking{
-      animation:blinkingText 1.5s infinite;
-  } */
+
   @keyframes blinkingText {
     0% {
       color: #08f7fe;
@@ -160,7 +158,6 @@ span {
 #btnYelpRequest {
     font-size: 2em;
     width: 15%; 
-    /* margin-top: 5%; */
     position: absolute;
     top: 2%;
     left: 57.5%;
@@ -193,28 +190,19 @@ span {
     position: relative;
     height: 36em;
     width: 100%;
-    /* position: absolute; */
-    /* bottom: 3%; */
-    /* left: 16.5%; */
 }
-
-/* #disclaimer-results {
-    border: 1px solid black;
-} */
 
 #yelp-info-storage {
     height: 35em;
     overflow-y: scroll;
     width: 45%;
     margin-left: 5%;
-    /* margin-top: 4%; */
 }
 
 .collection {
     background:rgba(0, 0, 0, 0.4);
     color: #08F7FE;
     height: 175px;
-    /* border: none; */
     padding-top: 5%;
 }
 
@@ -259,8 +247,6 @@ span {
 }
 
 #btnLocate2 {  
-  /* margin-left: 23%; */
-  /* margin-top: 5%; */
   position: absolute;
   right: 15%;
   top: 2%;
