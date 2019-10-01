@@ -11,6 +11,7 @@ body {
     background-color: gray;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-size: cover;
 }
 /* ----------------------------- Logo begin ------------------------ */
 h1 {
@@ -158,8 +159,8 @@ span {
     font-size: 2em;
     width: 15%; 
     position: absolute;
-    top: 1%;
-    left: 50%;
+    top: 2%;
+    left: 57.5%;
     color: rgb(255, 132, 218);
     background-color: rgba(0, 0, 0, 0.4); 
     padding: .5%;
@@ -237,18 +238,18 @@ span {
 #map {
     height: 350px;
     width: 350px;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-left: 15%;
 }
 
 #map-icon {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #btnLocate2 {  
   position: absolute;
-  right: 8%;
-  top: 10%;
+  right: 15%;
+  top: 2%;
 }
 
 ::-webkit-scrollbar {

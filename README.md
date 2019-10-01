@@ -16,7 +16,7 @@ Late-night hunger strikes for many after kitchens have closed. Where can one fin
 
 Late Nite Bites uses google maps and yelp APIs to bring about functionality specific to late-night nourishment. Using google maps to find your location, yelp is then able to find restaurants open. Our cuisine sorting allows one to filter specific fare for a personalized, quick, and easy user experience. 
 
-//useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+Steps to use the 
 
 Release History
 
@@ -24,13 +24,15 @@ Release History
 
 Meta
 
-Elizabeth Clohosey
+Elizabeth Clohosey -
 Email - Elizabethclohosey@gmail.com
 GitHub - https://github.com/ElizabethClohosey
 LinkedIn - https://www.linkedin.com/in/elizabeth-clohosey-r-t-r-m-arrt-10233a185/
 
 
-Justin Carlson – 
+Justin Carlson –
+Email - justincarlson7@gmail.com
+Github - https://github.com/justincarlson7
 
 Jamie O’Neill – 
 
