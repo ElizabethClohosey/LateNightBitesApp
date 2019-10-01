@@ -7,6 +7,7 @@ html {
 }
 
 body {
+<<<<<<< HEAD
   background-image: url("https://cdn.pixabay.com/photo/2018/04/13/08/04/cityscape-3315814_960_720.jpg");
   background-color: gray;
   background-repeat: no-repeat;
@@ -28,6 +29,47 @@ h1 {
   /* padding: 4rem 6rem 5.5rem; */
   animation: flicker 2.5s infinite alternate;
 }
+=======
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/13/08/04/cityscape-3315814_960_720.jpg");
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+}
+/* ----------------------------- Logo begin ------------------------ */
+h1 {
+    font-family: "Monoton", cursive;
+    text-align: center;
+    color: #08f7fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: .5%;
+    animation: flicker 1.5s infinite alternate;
+  }
+
+  #disclaimer-storage {
+    border: 2px solid #fff;
+    animation: flicker 2s infinite alternate;
+    --neon-border-color: #08f7fe;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+  }
+
+  #stage2-results {
+    border: 2px solid #fff;
+    box-shadow: 0 0 4rem #08f7fe, inset 0 0 4rem #08f7fe;
+    --neon-border-color: #08f7fe;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+  }
+>>>>>>> 849b27544d225a21d99c5cfd28c5e70f9125eee4
 
 .container-disclaimer {
   border: 2px solid #fff;
@@ -99,8 +141,25 @@ h1:focus {
   50% {
     color: transparent;
   }
+<<<<<<< HEAD
   99% {
     color: transparent;
+=======
+
+  @keyframes blinkingText {
+    0% {
+      color: #08f7fe;
+    }
+    49% {
+      color: transparent;
+    }
+    50% {
+      color: transparent;
+    }
+    99% {
+      color: transparent;
+    }
+>>>>>>> 849b27544d225a21d99c5cfd28c5e70f9125eee4
   }
 }
 /*------------------ End logo animation -------------------------- */
@@ -113,8 +172,16 @@ h1:focus {
 #disclaimer-storage {
   font-family: "Shadows Into Light", cursive;
   font-size: 2.5em;
+<<<<<<< HEAD
   padding: 9% 3% 0 3%;
   /* font-family: "Fjalla One", sans-serif; */
+=======
+  padding: 9% 3% 0% 3%;
+  /* font-family: 'Fjalla One', sans-serif; */
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+  font-size: 4em;
+>>>>>>> 849b27544d225a21d99c5cfd28c5e70f9125eee4
   height: 10em;
   color: #08f7fe;
   margin-top: 1%;
@@ -127,6 +194,7 @@ span {
 }
 
 #btnLocate {
+  font-family: 'Shadows Into Light', cursive;
   background-color: rgba(0, 0, 0, 0.4);
   font-family: "Shadows Into Light", cursive;
   font-size: 1em;
@@ -149,7 +217,12 @@ span {
   text-align: center;
 }
 
+.btn-category {
+  font-family: 'Shadows Into Light', cursive;
+}
+
 #btnYelpRequest {
+<<<<<<< HEAD
   font-size: 2em;
   width: 15%;
   position: absolute;
@@ -158,6 +231,16 @@ span {
   color: rgb(255, 132, 218);
   background-color: rgba(0, 0, 0, 0.4);
   padding: 0.5%;
+=======
+    font-size: 2em;
+    width: 15%; 
+    position: absolute;
+    top: 2%;
+    left: 57.5%;
+    color: rgb(255, 132, 218);
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: .5%;
+>>>>>>> 849b27544d225a21d99c5cfd28c5e70f9125eee4
 }
 
 #btnYelpRequest:hover {
@@ -167,9 +250,15 @@ span {
 .btn-category {
   background-color: rgba(0, 0, 0, 0.4);
   margin-left: 1%;
+<<<<<<< HEAD
   color: #08f7fe;
   margin-bottom: 1%;
   padding: 0.5%;
+=======
+  color: #08F7FE;
+  margin-bottom: .5%;
+  padding: .5%;
+>>>>>>> 849b27544d225a21d99c5cfd28c5e70f9125eee4
 }
 
 .btn-category:hover {
@@ -181,18 +270,21 @@ span {
 }
 
 #stage2-results {
+<<<<<<< HEAD
   height: 40em;
   width: 100%;
   position: absolute;
   bottom: 3%;
   left: 16.5%;
+=======
+    position: relative;
+    height: 36em;
+    width: 100%;
+>>>>>>> 849b27544d225a21d99c5cfd28c5e70f9125eee4
 }
 
-/* #disclaimer-results {
-    border: 1px solid black;
-} */
-
 #yelp-info-storage {
+<<<<<<< HEAD
   height: 500px;
   overflow-y: scroll;
   width: 45%;
@@ -206,6 +298,19 @@ span {
   height: 175px;
   /* border: none; */
   padding-top: 5%;
+=======
+    height: 35em;
+    overflow-y: scroll;
+    width: 45%;
+    margin-left: 5%;
+}
+
+.collection {
+    background:rgba(0, 0, 0, 0.4);
+    color: #08F7FE;
+    height: 175px;
+    padding-top: 5%;
+>>>>>>> 849b27544d225a21d99c5cfd28c5e70f9125eee4
 }
 
 .collection img {
@@ -238,21 +343,28 @@ span {
 }
 
 #map {
+<<<<<<< HEAD
   height: 350px;
   width: 350px;
   margin-top: 15%;
   margin-left: 15%;
   opacity: 0.5%;
+=======
+    height: 350px;
+    width: 350px;
+    margin-top: 7%;
+    margin-left: 15%;
+>>>>>>> 849b27544d225a21d99c5cfd28c5e70f9125eee4
 }
 
 #map-icon {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #btnLocate2 {
   position: absolute;
-  right: 9%;
-  top: 20%;
+  right: 15%;
+  top: 2%;
 }
 
 ::-webkit-scrollbar {
