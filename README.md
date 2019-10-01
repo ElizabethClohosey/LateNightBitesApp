@@ -34,4 +34,3 @@ Late Nite Bites uses google maps and yelp APIs to bring about functionality spec
 https://github.com/justincarlson7/lateNightBites
 
 
-
