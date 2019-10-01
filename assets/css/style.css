@@ -31,7 +31,7 @@ h1 {
 
   #disclaimer-storage {
     border: 2px solid #fff;
-    animation: flicker 2.5s infinite alternate;
+    animation: flicker 2s infinite alternate;
     --neon-border-color: #08f7fe;
     border-radius: 1rem;
     background: rgba(0, 0, 0, 0.4);
@@ -125,7 +125,10 @@ h1 {
 #disclaimer-storage {
   font-size: 2.5em;
   padding: 9% 3% 0% 3%;
-  font-family: 'Fjalla One', sans-serif;
+  /* font-family: 'Fjalla One', sans-serif; */
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 600;
+  font-size: 4em;
   height: 10em;
   color: #08F7FE;
   background: rgba(0, 0, 0, 0.4);
@@ -137,6 +140,7 @@ span {
 }
 
 #btnLocate {
+  font-family: 'Shadows Into Light', cursive;
   background-color: rgba(0, 0, 0, 0.4);
   font-size: 1em;
   margin-top: 5%;
@@ -153,6 +157,10 @@ span {
     color: white;
     font-size: 2em;
     text-align: center;
+}
+
+.btn-category {
+  font-family: 'Shadows Into Light', cursive;
 }
 
 #btnYelpRequest {
