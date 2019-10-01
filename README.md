@@ -13,6 +13,16 @@ Late Nite Bites uses google maps and yelp APIs to bring about functionality spec
 
 ![Late Nite Bites Screenshot](/LNB.png)
 
+### Technology
+Javascript
+JQuery
+AJAX
+CSS
+Materialize
+Google Fonts
+Google Maps API
+Yelp API
+
 ### Release History
 •    9/29/2019    Deployed and live
 
