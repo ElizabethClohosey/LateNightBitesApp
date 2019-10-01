@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
@@ -48,8 +49,6 @@
           location for evil.<br>
 
           <button id="btnLocate">Click Here For Late Nite Bites!</button>
-
-
         </p>
 
       </div>
@@ -69,21 +68,23 @@
       <!-- yelp info column -->
       <div id="yelp-info-storage" class="col l6"></div>
 
-
-
       <!-- map column  -->
       <div class="col l6">
 
         <div class="row">
-          <div class="col l3"><button id="btnYelpRequest">Find My Food</button>
+          <div class="col l3">
+            <button id="btnYelpRequest">Find My Food</button>
           </div>
-          <div class="col l3"> <a id="btnLocate2" class="btn-medium btn-floating" style="background-color: #ff84da">
-              <i id="map-icon" class="material-icons">my_location</i> </a>
-            </div>
-        </div>
-        <div class="row">
-        <div id="map" class="col l6"></div>
 
+          <div class="col l3"> 
+            <a id="btnLocate2" class="btn-medium btn-floating" style="background-color: #ff84da">
+              <i id="map-icon" class="material-icons">my_location</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div id="map" class="col l6"></div>
         </div>
       </div>
     </div>
@@ -98,29 +99,3 @@
 
 
 </html>
-
-<!-- To Do -->
-<!-- 
-  add more flare to buttons ???
-
-  make glow border instead of flickering effect.... slowing down site
-  MUST is blurry - change back if it still looks bad after border is change
-
-  add languages, libraries and frameworks used to ReadMe
-
-  Limit results to 1 mile and maybe only return 15 or 20 to keep category storage style
-
-  
--->
-
-<!--Notes -->
-<!--
-
--->
-
-<!-- Issues  -->
-<!--
-restaurant pins are not dropping on map
-can't click on results for webpage or whatever
-find my food doesn't reset yelp results
--->
