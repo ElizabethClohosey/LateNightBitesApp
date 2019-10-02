@@ -103,7 +103,7 @@ $(document).ready(function() {
         latitude +
         "&longitude=" +
         longitude +
-        "&radius=1600&categories=restaurants&open_now=true&%20term=restaurants",
+        "&radius=2500&categories=restaurants&open_now=true&%20term=restaurants",
       method: "GET",
       headers: {
         Authorization:
