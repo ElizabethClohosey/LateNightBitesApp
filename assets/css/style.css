@@ -7,11 +7,21 @@ html {
 }
 
 body {
+    /* background-image: url("https://cdn.pixabay.com/photo/2018/04/13/08/04/cityscape-3315814_960_720.jpg"); */
+    background-color: black;
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    /* background-size: cover; */
+}
+
+@media screen and (min-width: 525px) {
+  body {
     background-image: url("https://cdn.pixabay.com/photo/2018/04/13/08/04/cityscape-3315814_960_720.jpg");
     background-color: gray;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* background-size: cover; */
+  }
 }
 /* ----------------------------- Logo begin ------------------------ */
 h1 {
@@ -27,6 +37,7 @@ h1 {
     color: #fff;
     margin-bottom: .5%;
     animation: flicker 2.0s infinite alternate;
+    /* width: 90%; */
   }
 
   #stage2-results {
@@ -117,6 +128,7 @@ h1:focus {
   margin-top: 1%;
   margin-bottom: 1%;
 }
+
 #disclaimer {
   font-family: "Shadows Into Light", cursive;
   font-size: 3.5em;
